@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Return to Stoorie</title>
+<meta name="description" content="Your Stoorie email has been confirmed." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .callback {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    background: var(--dark);
+    color: var(--light);
+  }
+  .callback .wrap { max-width: 640px; }
+  .callback h1 {
+    margin: 0 0 16px;
+    font-size: clamp(34px, 8vw, 64px);
+    line-height: .95;
+    letter-spacing: -0.04em;
+  }
+  .callback p {
+    color: rgba(253,255,254,.78);
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 0 0 26px;
+  }
+  .callback .cta {
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 22px;
+  }
+</style>
+</head>
+<body>
+<main class="callback">
+  <div class="wrap">
+    <h1>Email confirmed.</h1>
+    <p>You can return to Stoorie now.</p>
+    <a class="cta" id="open-app" href="stoorie://auth-callback">Open Stoorie</a>
+  </div>
+</main>
+<script>
+  const target = 'stoorie://auth-callback' + window.location.search + window.location.hash;
+  const link = document.getElementById('open-app');
+  link.href = target;
+  window.setTimeout(() => {
+    window.location.href = target;
+  }, 250);
+</script>
+</body>
+</html>
