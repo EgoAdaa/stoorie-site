@@ -7,19 +7,20 @@
 <meta name="description" content="Open-source software used to build Stoorie." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-head"><div class="wrap">
-  <a class="brand" href="index.html"><span class="dot"></span>Stoorie</a>
+  <a class="brand" href="index.html"><span class="mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B8D989" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"></path></svg></span><span>stoorie</span></a>
   <nav class="nav">
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="help.html">Help</a>
+    <a class="navlink" href="index.html#try">How it works</a>
+    <a class="navlink" href="index.html#keep">What to keep</a>
+    <a class="navlink" href="privacy.html">Privacy</a>
+    <a class="pill pill-cta hide-sm" href="download.html">Download Stoorie</a>
   </nav>
 </div></header>
-<main class="doc"><div class="wrap">
+<main class="doc"><div class="wrap-narrow">
   <div class="doc-head"><h1>Open-source licences</h1></div>
   <p>Stoorie is built with open-source software, and we are grateful to the people who make it. The main libraries and their licences are listed below.</p>
   <table>
@@ -42,17 +43,41 @@
   <p>Full licence texts are available from each project. Questions: <a href="mailto:admin@stoorie.com">admin@stoorie.com</a>.</p>
 </div></main>
 <footer class="site-foot"><div class="wrap">
-  <div class="links">
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-    <a href="help.html">Help</a>
-    <a href="licences.html">Licences</a>
-    <a href="mailto:admin@stoorie.com">Contact</a>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html"><span class="mark"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B8D989" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"></path></svg></span><span>stoorie</span></a>
+      <p>Capture what happened. Keep what matters. Find the evidence when you need it.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="index.html#try">How it works</a></li>
+        <li><a href="index.html#keep">What to keep</a></li>
+        <li><a href="index.html#try">Try Stoorie</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="licences.html">Licences</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="legal-line">
-    Stoorie is a product of Submiti Ltd (company number 17205395),
-    registered in England and Wales. ICO registration ZC162501.
+  <div class="foot-bottom">
+    <span>Stoorie is a product of Submiti Ltd.</span>
+    <span>&copy; 2026 Submiti Ltd (company number 17205395). ICO registration ZC162501.</span>
   </div>
 </div></footer>
+<script src="site.js"></script>
 </body>
 </html>
